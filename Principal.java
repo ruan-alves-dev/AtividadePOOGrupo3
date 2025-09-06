@@ -3,12 +3,15 @@ package view;
 import controller.TarefaControle;
 import model.Tarefa;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Principal {
     private static final Scanner leitorEntrada = new Scanner(System.in);
 
     public static void main(String[] args) {
+        Locale.setDefault(new Locale("pt", "BR"));
+
         TarefaControle controleDeTarefas = new TarefaControle();
         int opcaoEscolhida = -1;
 
@@ -150,3 +153,4 @@ public class Principal {
         }
     }
 }
+
